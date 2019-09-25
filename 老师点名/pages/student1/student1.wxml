@@ -1,0 +1,18 @@
+<!--pages/student1/student1.wxml-->
+<view>
+<view class='welcome' >
+<text>
+欢迎你，亲爱的{{userName}}同学
+</text>
+</view>
+<view class='biaoti'>
+<text>
+请输入老师的id号:
+</text>
+
+</view>
+<view class='input' >
+<input style='background-color:yellow' name='teachId' bindblur='write2data' value='{{teacherId}}' placeholder='此处输入老师的ID'></input>
+</view>
+<button type='primary' bindtap='submit'>提交</button>
+</view>

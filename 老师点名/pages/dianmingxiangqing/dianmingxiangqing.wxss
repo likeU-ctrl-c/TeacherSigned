@@ -1,0 +1,25 @@
+/* pages/dianmingxiangqing/dianmingxiangqing.wxss */
+.biaoti{
+  background-color:lemonchiffon;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top: 20rpx;
+  color:black;
+ 
+}
+.neirong{
+  background-color:aliceblue;
+  display: flex;
+  flex-direction:row;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  color:black;
+}
+.bottom{
+  margin-bottom: 20rpx;
+  margin-right: 100rpx;
+  margin-left: 100rpx;
+  margin-top: 150rpx;
+
+}

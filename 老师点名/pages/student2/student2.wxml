@@ -1,0 +1,10 @@
+<!--pages/student2/student2.wxml-->
+<view>
+  <view class='biaoti'>
+    欢迎您，亲爱的{{username}}同学
+  </view>
+  <view   class='neirong' wx:for='{{course}}' wx:key=''wx:for-index="index" wx:for-item="item" bindtap="studentlist" data-id="{{index}}">
+  <view ><text space='nbsp' selectable='true' style='margin-top:100rpx'>{{item}}</text></view>
+  </view>
+
+</view>

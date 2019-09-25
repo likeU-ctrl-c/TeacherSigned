@@ -1,0 +1,30 @@
+<!--pages/dianmingxiangqing/dianmingxiangqing.wxml-->
+<view>
+
+
+<view class='biaoti'>
+<text style='margin-right:100rpx'>学号</text>
+<text style='margin-right:80rpx'>姓名</text>
+<text >状态</text>
+<text style='margin-left:100rpx'>操作</text>
+
+</view>
+<view wx:for='{{studentlist}}'wx:key='' wx:for-index="index" wx:for-item='item' >
+<view class='neirong'>
+<text style='margin-right:100rpx'>{{item.studentId}}</text>
+<text style='margin-right:80rpx'>{{item.studentName}}</text>
+<text >{{item.studentState}}</text>
+<button size='mini' style='margin-left:100rpx' bindtap='qiandao' data-id='{{index}}' type='primary'>签到</button>
+</view>
+<view class='neirong'style='height:100rpx'>
+<text>理由:</text>
+<input style='background-color:skyblue'value='{{lateReason}}' bindinput="model_blur" name='{{index}}'></input>
+<button bindtap='xiugai' data-id='{{index}}' size='mini' type='warn'>修改</button>
+</view>
+
+</view>
+<view>
+<button bindtap='tijiao' class='bottom'>提交</button>
+</view>
+
+</view>

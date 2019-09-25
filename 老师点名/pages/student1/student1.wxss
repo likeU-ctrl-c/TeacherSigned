@@ -1,0 +1,32 @@
+/* pages/student1/student1.wxss */
+input{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-color: greenyellow;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+}
+.biaoti{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background-color: greenyellow;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+}
+.welcome{
+  background-color:lemonchiffon;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-content: center;
+  margin-top: 20rpx;
+  color:black;
+}
+button{
+  margin-top: 300rpx;
+  margin-bottom: 100rpx;
+  margin-left: 200rpx;
+  margin-right: 200rpx;
+}

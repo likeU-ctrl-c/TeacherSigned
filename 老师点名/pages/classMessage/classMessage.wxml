@@ -1,0 +1,31 @@
+<!--pages/courseMessage/courseMessage.wxml-->
+<view>
+<!--标题课程名称内容-->
+  <view class='biaoti'>
+    <text>{{classname}}</text>
+  </view>
+  <view style='background-color:skyblue;' class='biaoti'>
+  <text style='margin-right:200rpx'>学号</text>
+  <text >姓名</text>
+  <text style='margin-left:200rpx'>操作</text>
+  </view>
+<!-- 对应的学生-->
+<view wx:for='{{studentlist}}'wx:key='' wx:for-item='item'>
+  <view  class='neirong' data-id="{{index}}">
+  <text style='margin-right:120rpx'>{{item.studentId}}</text>
+  <text >{{item.studentName}}</text>
+
+  <button size='mini' style='margin-left:120rpx' bindtap='deleteStudent'data-id='{{index}}'>删除</button>
+  </view>
+</view>
+<view class='bottom'>
+<button bindtap='addStudent' type='primary'>添加学生</button>
+</view>
+<view>
+学生的学号：<input placeholder='请输入要添加的学生学号'value='{{newstudent.studentId}}'bindinput='studentId'></input>
+学生的姓名：<input placeholder='请输入要添加的学生姓名'value='{{newstudent.studentName}}'bindinput='studentName'></input>
+</view>
+ <view class='bottom'>
+   <button type='warn' form-type='submit' bindtap='response'>上传</button>
+  </view>
+</view>

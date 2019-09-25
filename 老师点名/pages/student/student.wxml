@@ -1,0 +1,25 @@
+<!--pages/student/student.wxml-->
+<form bindsubmit='formSubmit'>
+<label class='bq'>学生登录界面</label>
+ 
+  <view class='stml'>
+    <view class='adress'>
+    所在的地址:<input disabled='true'name='address' value='{{location}}'></input>
+    </view>
+    <view class='skm_label'>
+    输入老师上课码：
+    <view class='skm'>
+      <input bindblur='skm' placeholder='输入老师上课码' value='{{skm_st}}'> </input>
+    </view>
+  </view>
+
+   <view  class='submit'>
+  <button bindtap='shuaxin' hidden='{{y_n_login}}'> 刷 新 </button>
+   <view class='subm'>
+  <button type='primary' form-type='submit' hidden='{{y_n_login}}'> 签 到 </button>
+  </view>
+   </view>
+   <view hidden='{{flag_cg}}' style='color:blue'>签到成功</view>
+   <view hidden='{{flag_sb}}'style='color:red'>签到失败，找老师补签 *^_^*<text>{{falsereason}}</text></view>
+  </view>
+</form>

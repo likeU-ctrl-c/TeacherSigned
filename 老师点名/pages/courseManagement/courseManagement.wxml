@@ -1,0 +1,19 @@
+
+<view>
+  <view class='biaoti'>
+    欢迎您，{{userinfo}}老师
+  </view>
+  <view   class='neirong' wx:for='{{classInfo}}' wx:key=''wx:for-index="index" wx:for-item="item" >
+    <view class='neirongleft' ><text space='nbsp' selectable='true'>{{item.className}}</text></view>
+    <button size='mini'class='neirongright'style='margin-right:0rpx' bindtap="courseMessage" type='primary' data-id="{{index}}">查看</button>
+    <button size='mini'class='neirongright' bindtap='deleteCourse' data-id='{{index}}' hover-stop-propagation='true'>删除</button>
+  </view>
+  <view class='bottom'>
+  
+    <button bindtap='addCourse' type='primary'>添加课程</button>
+  </view>
+  <view class='input'>
+   课程名称:<input placeholder='请输入要添加的课程名称'value='{{newCourseName}}'bindblur='writeData'></input>
+  </view>
+
+</view>

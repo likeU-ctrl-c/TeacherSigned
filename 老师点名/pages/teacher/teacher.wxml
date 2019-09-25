@@ -1,0 +1,35 @@
+<form bindsubmit='fromsubmit'>
+
+  <view class='biaoti'>
+    <text>老师点名台</text>
+  </view>
+  <view class='adress'>
+    所在的地址:
+    <input disabled='true' name='tc_address' value='{{location}}'></input>
+  </view>
+  <view class='skmsj' style='color:black'>
+    <label>上课码</label>
+    <input type='number' name='skm_tc' placeholder='随机写任意数字' value='{{skm}}'></input>
+    <button size='mini' bindtap='suiji'>随机</button>
+  </view>
+  <picker bindchange='picker' range='{{classInfo}}' range-key='className'>点击此处选择课程</picker>
+  <!--
+  <view style='background-color:skyblue;margin-top=20rpx;'>
+    <textarea name='dm_class' value='{{textarea}}'></textarea>
+  </view>
+    <view style='color:blue;' bindtap='studentlist'>
+    <text space='emsp'>               学生详情</text>
+  </view>
+  -->
+  <view wx:if='{{course}}'>
+  <text>已经选择的课程是：</text>
+ 
+  <text >{{course}}</text>
+ </view>
+  <view class='submit'>
+    <button bindtap='qingkong'>清空 </button>
+    <button type='primary' form-type='submit'>提交 </button>
+  </view>
+ 
+
+</form>

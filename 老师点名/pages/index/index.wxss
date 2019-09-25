@@ -1,0 +1,49 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.login-user{
+  margin-top: 5rpx;
+  margin-left: 20rpx;
+  color: blue;
+}
+.login-password{
+  margin-top: 5rpx;
+  margin-left: 20rpx;
+  color: blue;
+}
+.input_user{
+  margin-top: 5rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  color:black;
+}
+.input_pass{
+  margin-top: 0rpx;
+  margin-left: 20rpx;
+  color:black;
+}
+.denglu{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.zhuce{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}

@@ -1,0 +1,47 @@
+{
+  "cloud": true,
+  "pages": [
+  "pages/index/index",
+    "pages/student1/student1",
+    "pages/student2/student2",
+    "pages/student/student",
+  
+    "pages/dianmingcishu/dianmingcishu",
+    "pages/courseManagement/courseManagement",
+    "pages/teacher/teacher",
+     "pages/dianmingxiangqing/dianmingxiangqing",
+    "pages/zhuce/zhuce",
+
+   "pages/dianmingdan/dianmingdan",
+    
+    "pages/courseMessage/courseMessage",
+    "pages/classMessage/classMessage"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffcc00",
+    "navigationBarTitleText": "老师点名了",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "skyblue",
+    "position": "bottom",
+    "selsectedColor": "#ffff",
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/teacher/teacher",
+        "text": "点名台"
+      },
+      {
+        "pagePath": "pages/courseManagement/courseManagement",
+        "text": "课程管理"
+      },
+      {
+        "pagePath": "pages/dianmingdan/dianmingdan",
+        "text": "点名详情"
+      }
+    ]
+  }
+}

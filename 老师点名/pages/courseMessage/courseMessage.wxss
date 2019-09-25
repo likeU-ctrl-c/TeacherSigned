@@ -1,0 +1,30 @@
+/* pages/courseMessage/courseMessage.wxss */
+.biaoti{
+  background-color:lemonchiffon;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top: 20rpx;
+  color:black;
+}
+.neirong{
+    background-color:aliceblue;
+  display: flex;
+  flex-direction:row;
+  justify-content:left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  color:black;
+}
+.bottom{
+  margin-top: 200rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+input{
+  background-color:seashell;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height:100rpx;
+}

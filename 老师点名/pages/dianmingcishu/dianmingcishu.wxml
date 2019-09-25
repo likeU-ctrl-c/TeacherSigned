@@ -1,0 +1,37 @@
+<!--pages/dianmingcishu/dianmingcishu.wxml-->
+
+<view>
+
+  <view class='biaoti'>
+    
+    {{course}}课程点名情况
+  </view>
+  <view class='shaixuan'>
+  <button bindtap='done'>已完成</button>
+  <button bindtap='doing'>未完成</button>
+  <button bindtap='all'>全部</button>
+  <button bindtap='allStudent'>学生情况汇总</button>
+</view>
+
+  <view   class='neirong' wx:for='{{varydianmingdan}}' wx:key=''wx:for-index="index" wx:for-item="item" bindtap="studentlist" data-id="{{index}}" hidden='{{!flag}}'>
+    <view ><text space='nbsp' style='margin-top:100rpx'>第{{index+1}}次点名</text><text space='nbsp' style='margin-top:100rpx;color:red'wx:if='{{item.state=="未完成"}}'>{{item.state}}</text><text space='nbsp' style='margin-top:100rpx;color:green'wx:if='{{item.state=="已完成"}}'>{{item.state}}</text></view>
+  </view>
+
+  <view hidden='{{flag}}'>
+      <view class='biaotiStudent'>
+      <text style='margin-right:100rpx'>学号</text>
+      <text style='margin-right:80rpx'>姓名</text>
+      <text >已签到</text>
+      <text style='margin-left:100rpx'>未签到</text>
+      <text style='margin-left:100rpx'>其他理由</text>
+      </view>
+      <view wx:for='{{StudentAllState}}' wx:key='' wx:for-index="index"wx:for-item="item" class='biaotiStudent'>
+      <text style='margin-right:100rpx'>{{item.studentid}}</text>
+      <text style='margin-right:80rpx'>{{item.studentName}}</text>
+      <text>{{item.StudentCome}}</text>
+      <text style='margin-left:100rpx'>{{item.StudentLate}}</text>
+      <text style='margin-left:100rpx'>{{item.StudentOther}}</text>
+    </view>
+  </view>
+
+</view>

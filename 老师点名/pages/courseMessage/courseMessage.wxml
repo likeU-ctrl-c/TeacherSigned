@@ -1,0 +1,23 @@
+<!--pages/courseMessage/courseMessage.wxml-->
+<view>
+<!--标题课程名称内容-->
+  <view class='biaoti'>
+  <text>{{message}}</text>
+    <text>{{courseName}}</text>
+  </view>
+<!-- 对应的班级-->
+<view class='neirong' wx:for='{{courseInfo}}'wx:key='' wx:for-item='item'>
+  <view   >
+    <text >{{item.banjimincheng}}</text>
+  </view>
+   <button size='mini'style='margin-right: 0rpx'bindtap="classMessage"data-id="{{index}}"  type='primary'>查看</button>
+  <button size='mini'style='margin-right: 20rpx' bindtap='deleteClass' data-id='{{index}}'>删除</button>
+</view>
+<view class='bottom'>
+<button type='primary' bindtap='addClass'>添加班级</button>
+</view>
+  <view >
+    班级名称：<input placeholder='请输入要添加的班级名称'value='{{newClassName}}'bindblur='writeData'></input>
+  </view>
+</view>
+

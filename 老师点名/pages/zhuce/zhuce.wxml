@@ -1,0 +1,85 @@
+<!--pages/zhuce/zhuce.wxml-->
+<form bindsubmit="formSubmit">
+  <view class='zhucejiemian'>
+    <view class='login-user'>
+      用   户  名:
+      <view class='input_user'>
+    
+        <input type='number' name='userid' value='{{userid}}' placeholder='这里输入(学号\\教师号)'></input>
+      
+      </view>
+    </view>
+    <view class='login-password'>
+      密      码: 
+      <view class='input_pass'>
+        <input password='1'name='password' bindinput='getpassword1' value='{{password}}' placeholder=' 这里输入注册密码'></input>
+      </view>
+    </view>
+      <view class='login-password2' >
+      再次输入密码: 
+      <view class='input_pass2'>
+        <input password='1'value='{{password2}}'  bindinput='getpassword2' bindblur='panduanyizhi' placeholder=' 请再输入一遍密码'></input>
+        <view class = 'mimatixing1'  hidden='{{flag}}'>密码不一致 </view>
+      <view class = 'mimatixing2'  hidden='{{flag1}}'>密码一致 </view>
+      </view>
+    </view>
+    <view class='sex' >
+      性 别 :
+     
+      <label>
+      <radio-group name='sex'>
+      <radio value='男' color='green'>男</radio>
+      <radio value='女'color='green'>女</radio>
+      </radio-group>
+      </label>
+     
+    </view>
+    <view class='user-name'>
+      真实姓名:
+      <view class='input_user'>
+    
+        <input name='username' placeholder='真实姓名'></input>
+      
+      </view>
+    </view>
+    <view class='zhuanyebanji'>
+      所属学院
+      <view class='input_user'>
+      <input maxlength='140'name='gradeclass' placeholder='例:电子与信息工程学院'></input>
+      </view>
+    </view>
+    <view class='zhuanyebanji'>
+    学校
+    <view class='input_user'>
+      <input maxlength='20' name='school' placeholder='（例如：辽宁工业大学）'></input>
+      </view>
+    </view>
+    <view class='user-name'>
+    身份
+    <view class='sex-input'>
+      <label>
+      <radio-group name='shenfen' bindchange='banji'>
+      <radio value='教师' color='green'>教师</radio>
+      <radio value='学生' color='green'>学生</radio>
+      </radio-group>
+      </label>
+      </view>
+    </view>
+   <view class='zhuanyebanji' hidden='{{banji}}'>
+    班级
+    <view class='input_user'>
+      <input maxlength='20' name='class' placeholder='（例如：计算机161班）'></input>
+      </view>
+    </view>
+    <view class='tixing'>
+    <label>*请如实填写，不可更改*</label>
+    </view>
+    <view class='commite'>
+    <button  form-type='reset'>重 置</button>
+    <button type='primary' form-type='submit' >提 交</button>
+    </view>
+    
+  </view>
+</form>
+
+

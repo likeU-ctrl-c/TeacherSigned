@@ -1,0 +1,39 @@
+/* pages/student/student.wxss */
+.bq{
+  height: 100rpx;
+  background-color: lightcyan;
+  color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adress{
+  background: lightsalmon;
+}
+.stml{
+  margin-top: 20rpx;
+  background-color:lavenderblush;
+  color: black;
+}
+.skm_label{
+  margin-top: 20rpx;
+}
+.skm{
+  background-color: lightyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  }
+.submit{
+  margin-top: 100rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  margin-bottom: 20rpx;
+}
+.subm{
+  margin-top: 20rpx;
+}

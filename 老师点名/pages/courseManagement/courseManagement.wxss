@@ -1,0 +1,37 @@
+/* pages/classManagement/classManagement.wxss */
+.biaoti{
+  background-color:lemonchiffon;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top: 20rpx;
+  color:black;
+}
+.neirong{
+  background-color:aliceblue;
+  display: flex;
+  flex-direction:row;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  color:black;
+}
+.neirongleft{
+margin-left: 20rpx;
+}
+.neirongright{
+margin-inline-end: 50rpx;
+margin-right: 20rpx;
+}
+.bottom{
+  margin-top: 200rpx;
+    margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+input{
+  background-color:seashell;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 100rpx
+  
+}

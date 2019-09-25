@@ -1,0 +1,20 @@
+/* pages/dianmingdan/dianmingdan.wxss */
+.biaoti{
+  background-color:lemonchiffon;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top: 20rpx;
+  color:black;
+}
+.neirong{
+  background-color:aliceblue;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  color:black;
+  height: 100rpx;
+}
